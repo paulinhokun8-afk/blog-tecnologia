@@ -1,0 +1,237 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f6f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+}
+
+header {
+    background: #14213d;
+    color: white;
+    padding: 20px 0;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 28px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #fca311;
+}
+
+.banner {
+    background: linear-gradient(120deg, #14213d, #2563a6);
+    color: white;
+    text-align: center;
+    padding: 65px 20px;
+}
+
+.banner h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.section-title {
+    margin: 35px 0 20px;
+    color: #14213d;
+    border-left: 5px solid #fca311;
+    padding-left: 12px;
+}
+
+.posts-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
+}
+
+.post-card {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
+
+.post-card:hover {
+    transform: translateY(-5px);
+}
+
+.post-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.post-content {
+    padding: 20px;
+}
+
+.post-content h3 {
+    color: #14213d;
+    margin-bottom: 10px;
+}
+
+.post-content p {
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.btn {
+    display: inline-block;
+    background: #fca311;
+    color: #14213d;
+    border: none;
+    padding: 11px 18px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background: #e89000;
+}
+
+.hidden {
+    display: none;
+}
+
+.detalhes {
+    background: white;
+    margin-top: 30px;
+    padding: 25px;
+    border-radius: 12px;
+}
+
+.btn-voltar {
+    background: #14213d;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 25px;
+}
+
+.post-detalhado h2 {
+    color: #14213d;
+    margin-bottom: 15px;
+}
+
+.post-detalhado p {
+    margin-bottom: 15px;
+}
+
+.comentarios {
+    margin-top: 35px;
+}
+
+.comentarios h2,
+.comentarios h3 {
+    color: #14213d;
+    margin-bottom: 15px;
+}
+
+.comentario-card {
+    background: #f4f6f9;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 12px;
+}
+
+.comentario-card h4 {
+    color: #2563a6;
+}
+
+.comentario-card p {
+    margin-top: 5px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 15px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+}
+
+textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+form .btn {
+    align-self: flex-start;
+}
+
+#sobre {
+    margin: 45px 0;
+}
+
+#sobre p {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+footer {
+    background: #14213d;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+@media (max-width: 600px) {
+    .header-content {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .banner h2 {
+        font-size: 24px;
+    }
+
+    nav a {
+        margin: 0 8px;
+    }
+
+    .detalhes {
+        padding: 15px;
+    }
+}

@@ -1,0 +1,107 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechBlog - Tecnologia e Inovação</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="container header-content">
+            <h1>🚀 TechBlog</h1>
+            <nav>
+                <a href="#" onclick="voltarInicio()">Início</a>
+                <a href="#sobre">Sobre</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="banner">
+        <div class="container">
+            <h2>O mundo da tecnologia está aqui!</h2>
+            <p>Notícias, novidades e conhecimentos sobre tecnologia.</p>
+        </div>
+    </section>
+
+    <main class="container">
+
+        <section id="inicio">
+            <h2 class="section-title">Últimas publicações</h2>
+
+            <p id="mensagem">Carregando publicações...</p>
+
+            <div id="lista-posts" class="posts-grid"></div>
+        </section>
+
+        <section id="detalhes" class="detalhes hidden">
+
+            <button class="btn-voltar" onclick="voltarInicio()">
+                ← Voltar para publicações
+            </button>
+
+            <article id="post-completo"></article>
+
+            <section class="comentarios">
+                <h2>Comentários</h2>
+
+                <div id="lista-comentarios">
+                    Carregando comentários...
+                </div>
+
+                <h3>Deixe seu comentário</h3>
+
+                <form id="form-comentario">
+
+                    <input
+                        type="text"
+                        id="nome"
+                        placeholder="Seu nome"
+                        required
+                    >
+
+                    <input
+                        type="email"
+                        id="email"
+                        placeholder="Seu e-mail"
+                        required
+                    >
+
+                    <textarea
+                        id="comentario"
+                        placeholder="Escreva seu comentário..."
+                        required
+                    ></textarea>
+
+                    <button type="submit" class="btn">
+                        Enviar comentário
+                    </button>
+
+                </form>
+
+                <p id="mensagem-comentario"></p>
+            </section>
+
+        </section>
+
+        <section id="sobre">
+            <h2 class="section-title">Sobre o TechBlog</h2>
+            <p>
+                O TechBlog é um projeto desenvolvido para compartilhar
+                conhecimentos sobre tecnologia, programação,
+                inovação e desenvolvimento web.
+            </p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2026 TechBlog - Desenvolvido com HTML, CSS e JavaScript.</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
